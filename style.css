@@ -1,23 +1,26 @@
+/*Minimum styles to make game visible*/
 html, body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    margin: 0;
 }
-h1{
+header{
     text-align: center;
+    margin: 0;
+    padding: 1%;
+}
+header h1, header h2{
+    margin: 0;
 }
 #board{
-    height: 600px;
-    width: 600px;
-    border: 5px solid black;
-    /*center*/
-    margin: auto;
-}
-#snake{
-    background-color: black;
-    /*Center snake on board*/
     position: relative;
-    top: 50%;
+    border: 5px solid black;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+}
+#reset{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
